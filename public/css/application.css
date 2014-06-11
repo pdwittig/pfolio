@@ -1,23 +1,10 @@
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, li, p, a {
   font-family: 'Armata', sans-serif;
+  color: #34495E;
 }
 
 th {
   text-align: left;
-}
-
-ul {
-  border-left: 6px solid white;
-  margin-left: 80px;
-  list-style: none;
-}
-
-li {
-  height: 360px;
-}
-
-li:nth-child(1) {
-  margin-top: 100px;
 }
 
 p {
@@ -27,39 +14,62 @@ p {
   border-radius: 1px; 
 }
 
+#navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar li {
+  float: left;
+  margin-right: 50px;
+  font-size: 1.25em;
+  color: #fff;
+}
+
 .intro-container {
   height: 700px;
 }
 
 .inner-intro {
-  /*height: 100%;*/
   height: 700px;
   width: 100%;
   position: fixed;
   background-color: #fff;
-  overflow: hidden;
 }
 
-.inner-intro div {
+.profile {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 75px;
 }
 
-.inner-intro img {
+.profile img {
   border-radius: 50%;
 }
 
+.connect {
+  text-align: center;
+  margin-top: 50px;
+  opacity: 0.7;
+}
 
 .project-container {
   height: 900px;
 }
 
-.project-container:nth-child(odd) {
+.project-container:nth-child(even) {
   background-color: #e8e8e8;
 }
 
-.project-container:nth-child(even) {
-  background-color: #01dfa5;
+.project-container:nth-child(odd) {
+  /*background-color: #01dfa5;*/
+  background-color: #3498DB;
 }
 
 
