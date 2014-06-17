@@ -63,13 +63,44 @@ p {
   height: 900px;
 }
 
-.project-container:nth-child(even) {
+.projects > div:nth-child(even) {
   background-color: #e8e8e8;
 }
 
-.project-container:nth-child(odd) {
+.projects > div:nth-child(odd) {
   /*background-color: #01dfa5;*/
   background-color: #3498DB;
 }
+
+.monitor-container {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  top: 800px;
+}
+
+.monitor {
+  position: relative;
+  margin: 0 auto;
+  width: 250px;
+}
+
+.monitor img {
+  z-index: 1000;
+}
+
+.monitor-content {
+  position: absolute;
+  top: 0;
+  left: 10;
+  margin: auto 0;
+  z-index: 1;
+}
+
+.monitor-content img {
+  z-index: 1;
+}
+
+
 
 
