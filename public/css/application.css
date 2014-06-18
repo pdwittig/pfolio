@@ -7,12 +7,12 @@ th {
   text-align: left;
 }
 
-p {
+/*p {
   padding: 2em;
   background-color: white;
   width: 150px;
   border-radius: 1px; 
-}
+}*/
 
 #navbar {
   position: fixed;
@@ -24,11 +24,13 @@ p {
 
 #navbar ul {
   list-style: none;
+  /*max-width: 500px;*/
+  margin: 20px auto;
 }
 
 #navbar li {
   float: left;
-  margin-right: 50px;
+  margin-right: 23%;
   font-size: 1.25em;
   color: #fff;
 }
@@ -60,7 +62,7 @@ p {
 }
 
 .project-container {
-  height: 900px;
+  height: 1000px;
 }
 
 .projects > div:nth-child(even) {
@@ -76,7 +78,7 @@ p {
   height: 0;
   width: 100%;
   position: fixed;
-  top: 800px;
+  top: 1200px;
 }
 
 .monitor {
@@ -85,22 +87,52 @@ p {
   width: 250px;
 }
 
-.monitor img {
-  z-index: 1000;
-}
+/*.monitor img {
+  position: absolute;
+}*/
 
 .monitor-content {
   position: absolute;
-  top: 0;
-  left: 10;
+  top: 9px;
+  left: 10px;
   margin: auto 0;
-  z-index: 1;
 }
 
-.monitor-content img {
-  z-index: 1;
+.image-container {
+  position: absolute;
 }
 
+#monitor {
+  position: absolute;
+  z-index: 1000;
+}
+
+.text-col {
+  position: fixed
+}
+
+.text-col p {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.row div {
+  top: 1200px;
+}
+
+.left {
+  width: 500px;
+  right: 55% ;
+}
+
+.right {
+  width: 500px;
+  left: 55%;
+}
+
+#gistboard {
+  clip: rect(158px, 238px, 158px, 0px);
+}
 
 
 
